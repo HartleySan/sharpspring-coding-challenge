@@ -1,0 +1,23 @@
+@import 'variables';
+
+.logIn {
+    background: $grayLight;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+    & > div {
+        background: $white;
+        border: $gray solid 0.1rem;
+        border-radius: 0.2rem;
+        padding: 2rem;
+        width: 40rem;
+
+        & > h1 {
+            font-size: 1.2rem;
+            margin: -1.1rem auto 2rem;
+            text-align: center;
+        }
+    }
+}

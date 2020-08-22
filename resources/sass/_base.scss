@@ -1,0 +1,108 @@
+@import 'variables';
+
+a,
+body,
+button,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+i,
+img,
+input,
+label,
+li,
+ol,
+p,
+pre,
+span,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+tr,
+ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    height: 100vh;
+}
+
+body {
+    color: $black;
+    font: 1.8rem Arial, sans-serif;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+textarea {
+    color: $black;
+    font: 1.8rem Arial, sans-serif;
+    vertical-align: bottom;
+}
+
+hr {
+    border: 0;
+    height: 0.1rem;
+}
+
+.fa,
+.fab,
+.far,
+.fas {
+    color: $black;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.noHighlighting {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background: $green;
+    color: $white;
+}
+
+::-moz-selection {
+    background: $green;
+    color: $white;
+}

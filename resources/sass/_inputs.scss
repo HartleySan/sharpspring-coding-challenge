@@ -1,0 +1,87 @@
+@import 'variables';
+
+form {
+    & > * {
+        margin: 2rem 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .error {
+        color: $red;
+    }
+
+    .siteBtn {
+        width: 100%;
+    }
+}
+
+.passwordInputWithLabel,
+.textareaInputWithLabel,
+.textInputWithLabel {
+    margin: 2rem 0;
+
+    & > .label {
+        margin-bottom: 0.5rem;
+
+        & > label {
+            & > .required {
+                color: $red;
+            }
+        }
+    }
+}
+
+.passwordInput,
+.textInput {
+    & > input {
+        border: $gray solid 0.1rem;
+        border-radius: 0.2rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+}
+
+.textareaInput {
+    & > textarea {
+        border: $gray solid 0.1rem;
+        border-radius: 0.2rem;
+        height: 15rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+}
+
+.siteBtn {
+    background: $green;
+    border: 0;
+    border-radius: 0.2rem;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    outline: 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        background: $greenDark;
+        color: $white;
+    }
+
+    &.gray {
+        background: $grayDark;
+
+        &:hover {
+            background: $grayDarker;
+        }
+    }
+}

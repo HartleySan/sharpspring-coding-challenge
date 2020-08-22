@@ -1,0 +1,33 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "development-css": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.css.mix",
+        "development-js": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.js.mix",
+        "watch-css": "npm run development-css -- --watch",
+        "watch-js": "npm run development-js -- --watch",
+        "watch": "concurrently \"npm run watch-css\" \"npm run watch-js\"",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production-css": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.css.mix",
+        "production-js": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.js.mix",
+        "prod": "concurrently \"npm run production-css\" \"npm run production-js\""
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "concurrently": "^5.3.0",
+        "cross-env": "^7.0",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.19",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "laravel-mix-merge-manifest": "^0.1.2",
+        "vue": "^2.6.11"
+    }
+}
